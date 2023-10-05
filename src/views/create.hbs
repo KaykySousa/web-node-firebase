@@ -1,0 +1,62 @@
+<div class="min-vh-100 w-100 d-flex justify-content-center align-items-center p-4">
+	<form action="/create" method="post" class="max-w-32rem w-100">
+		<header class="mb-4">
+			<h1 class="display-5">Agendar</h1>
+			<p class="lead">Sistema utilizado para agendamento de serviços.</p>
+		</header>
+		<div class="form-floating mb-3">
+			<input type="text" class="form-control" id="name-input" name="name" placeholder="Nome" required />
+			<label for="name-input">Nome</label>
+		</div>
+
+		<div class="form-floating mb-3">
+			<input
+				type="tel"
+				class="form-control"
+				id="phone-input"
+				name="phone"
+				placeholder="Telefone"
+				required
+			/>
+			<label for="phone-input">Telefone</label>
+		</div>
+
+		<div class="form-floating mb-3">
+			<select class="form-select" id="phone-type-input" name="phoneType" required>
+				<option selected hidden disabled value="">Selecione</option>
+				<option value="celular">Celular</option>
+				<option value="whatsapp">Whatsapp</option>
+				<option value="telefone-fixo">Telefone Fixo</option>
+			</select>
+			<label for="phone-type-input">Origem</label>
+		</div>
+
+		<div class="form-floating mb-3">
+			<input
+				type="date"
+				class="form-control"
+				id="contact-date-input"
+				name="contactDate"
+				placeholder="Data de Contato"
+				required
+			/>
+			<label for="contact-date-input">Data de Contato</label>
+		</div>
+
+		<div class="form-floating mb-3">
+			<textarea
+				class="form-control !min-h-8rem"
+				placeholder="Observações"
+				id="observations-input"
+				name="observations"
+			></textarea>
+			<label for="observations-input">Observações</label>
+		</div>
+
+		<div class="d-flex">
+			<button type="submit" class="btn btn-dark me-2">Cadastrar</button>
+			<a href="/" class="btn btn-outline-dark">Visualizar Agendamentos</a>
+		</div>
+
+	</form>
+</div>

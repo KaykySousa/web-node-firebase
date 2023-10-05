@@ -1,0 +1,19 @@
+.max-w-32rem {
+	max-width: 32rem;
+}
+
+.max-w-64rem {
+	max-width: 64rem;
+}
+
+.max-w-16rem {
+	max-width: 16rem;
+}
+
+.\!min-h-8rem {
+	min-height: 8rem !important;
+}
+
+.whitespace-pre-wrap {
+	white-space: pre-wrap;
+}
